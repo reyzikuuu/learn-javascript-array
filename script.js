@@ -8,8 +8,8 @@ document.querySelector('.input-name').onsubmit = function (event) {
 
     nameList.push(name);
 
-    document.forms['nameForm'].reset();
-
+    // document.forms['nameForm'].reset(); // reset() => Memakai method Form Element
+    document.querySelector('.input-name').reset(); // reset() => Memakai query selector
     console.info(nameList);
   
 };
