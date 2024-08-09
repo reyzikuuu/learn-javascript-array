@@ -38,67 +38,114 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  letter-spacing: -0.04rem;
+  letter-spacing: -0.03rem;
 }
 
 .wrapper {
-  display: flex;
-  max-width: 540px;
-  height: max-content;
+  display: grid;
+  max-width: 776px;
   margin-inline: auto;
-  margin-block-start: 50px;
-  border: 1px solid #e2e2e2;
+  margin-block-start: 1rem;
+  padding: 1rem;
+  row-gap: 1rem;
   justify-content: center;
-  padding: 5rem;
-  border-radius: 0.5rem;
+  /* border: 1px solid #e0e0e0; */
 }
 
-table {
-  border-collapse: collapse;
-  font-size: 0.9rem;
+.body-form {
+  /* border: 1px solid #e0e0e0; */
+  /* width: 400px; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-inline: 2rem;
 }
 
-th,
-td {
-  border: 1px solid #d3d3d3;
-  padding: 0.5rem;
+.table {
+  display: grid;
+  /* border: 1px solid #e0e0e0; */
+  /* width: 400px; */
 }
 
-td {
-  text-align: center;
-}
+/* === CSS Style -> Table ===  */
 
-th[scope='col'] {
-  background-color: beige;
-  font-weight: 600;
-}
+  .table-output  {
+    border-collapse: collapse;
+    padding: 0.5rem;
+    width: 650px;
+  }
 
-th[scope='row'] {
-  text-align: start;
-  font-weight: 500;
-}
+  th,
+  td {
+    padding-block: 0.5rem;
+    border: 1px solid #e0e0e0;
+  }
 
-td[scope='row'] {
-  font-weight: 600;
-}
+  .body-form td {
+    border: none;
+  }
 
-tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
+  th[scope='col'] {
+    font-weight: 500;
+    border: none;
+  }
 
-caption {
-  padding: 20px;
-  font-size: 1.2rem;
-  letter-spacing: -0.04;
-}
+  th[scope='col']:nth-child(3) {
+    border: none;
+  }
 
-th > input {
-  border: none;
-  width: 100px;
-  height: 25px;
-  background-color: rgb(105, 197, 105);
-  color: #fff;
-  border-radius: 0.2rem;
-  font-weight: 400;
-  font-size: 0.8rem;
-}
+  tr > td:nth-child(3) {
+    border: none;
+  }
+
+
+  td[scope='row'] {
+    text-align: start;
+    padding-inline-start: 1rem;
+  }
+
+  .body-form td[scope='row'] {
+    text-align: start;
+    padding-inline-start: 1rem;
+    width: 200px;
+  }
+
+  td {
+    text-align: center
+  }
+
+  .body-table td > input {
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(216, 108, 108);
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+
+  .body-form td > input {
+    margin-inline-start: 1.5rem;
+    border: none;
+    box-shadow:
+    0px 1.7px 1.4px rgba(0, 0, 0, 0.009),
+    0px 3.1px 3.6px rgba(0, 0, 0, 0.013),
+    0px 4.6px 7.3px rgba(0, 0, 0, 0.017),
+    0px 7.9px 15px rgba(0, 0, 0, 0.021),
+    0px 19px 41px rgba(0, 0, 0, 0.03)
+    ;
+  }
+
+  .table-input .submit {
+    background-color: rgb(117, 194, 117);
+    width: 6rem;
+    height: 1.9rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 500;
+  }
+
+

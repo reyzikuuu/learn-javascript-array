@@ -12,48 +12,49 @@
 </head>
 <body>
 
-    <div class="wrapper">
-      <table>
-        <caption>
-          Data Siswa Excellent
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Nama</th>
-            <th scope="col">Nilai</th>
-            <th scope="col">No Induk</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Virman Adipura</th>
-            <td scope="row">99</td>
-            <td>124347</td>
-            <th><input type="button" value="Apply"></th>
-          </tr>
-          <tr>
-            <th scope="row">Reyziku Danreva</th>
-            <td scope="row">97</td>
-            <td>821497</td>
-            <th><input type="button" value="Apply"></th>
-          </tr>
-          <tr>
-            <th scope="row">Reykhansa</th>
-            <td scope="row">89</td>
-            <td>342512</td>
-            <th><input type="button" value="Apply"></th>
-            
-          </tr>
-          <tr>
-            <th scope="row">Luna</th>
-            <td scope="row">78</td>
-            <td>778906</td>
-            <th><input type="button" value="Apply"></th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <section class="wrapper">
+      <div class="body-form">
+        <form name="nameForm" class="input-name"> <!--Form Pertama-->
+          <table class="table-input">
+            <tbody>
+              <tr>
+                <th scope="col"><label for="name">Input Name</label></th>
+                <td><input type="text" id="name" name="name"></td>
+                <td scope="row"><input type="submit" value="Add" class="submit"></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="table">
+        <table class="table-output">
+          <thead>
+            <tr>
+              <th scope="col">Nama</th>
+              <th scope="col">No Induk</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="body-table">
+            <tr>
+              <td scope="row">El Reyziku Danreva</td>
+              <td>1564320</td>
+              <td><input type="button" value="Hapus"></td>
+            </tr>
+            <tr>
+              <td scope="row">Reykhansa</td>
+              <td>2245103</td>
+              <td><input type="button" value="Hapus"></td>
+            </tr>
+            <tr>
+              <td scope="row">Adipura</td>
+              <td>1098431</td>
+              <td><input type="button" value="Hapus"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
   <script src="./script.js"></script>
 </body>
